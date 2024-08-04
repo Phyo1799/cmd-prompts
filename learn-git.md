@@ -1,4 +1,6 @@
-###### CTRL + K + V OR CTRL + SHIFT + V 
+<!-- 
+CTRL + K + V OR CTRL + SHIFT + V
+-->
 
 # Git and GitHub Notes
 
