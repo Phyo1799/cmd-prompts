@@ -13,9 +13,9 @@ CTRL + K + V OR CTRL + SHIFT + V
 
 - `git branch [branch-name]`: Create a new branch with the specified name.
 - `git checkout [branch-name]`: Switch to the specified branch.
-- `git switch [branch-name]`: (Alternative) Switch to the speciclfied branch.
-- `git switch -c [branch-name]`: (Create a branch and Move there)
-- `git checkout -b [branch-name]`: (Create a branch and Move there)
+- `git switch [branch-name]`: (Alternative) Switch to the specified branch.
+- `git switch -c [branch-name]`: (Create a branch and move there)
+- `git checkout -b [branch-name]`: (Create a branch and move there)
 
 ## Committing Changes
 
@@ -29,6 +29,7 @@ CTRL + K + V OR CTRL + SHIFT + V
 - `git status`: Show the status of changes in the working directory and staging area.
 - `git diff`: Show the differences between the working directory and the index (staged changes).
 - `git diff [file]`: Show the differences for a specific file.
+- `git diff --staged`: Show the differences for a specific file from staged.
 
 ## Merging and Rebasing
 
@@ -39,12 +40,20 @@ CTRL + K + V OR CTRL + SHIFT + V
 
 - `git reset [file]`: Unstage the specified file (reset it from the staging area).
 - `git checkout -- [file]`: Discard changes in the working directory for a specific file.
+- `git restore [file]`: Restore the specified file from the latest commit.
 - `git revert [commit]`: Create a new commit that undoes the changes made in a specified commit.
+
+## Managing Files
+
+- `git rm [file]`: Remove the specified file from the working directory and stage the deletion for commit.
+- `git rm --cached [file]`: Remove the specified file from the staging area but leave it in the working directory.
+- `git mv [old-filename] [new-filename]`: Rename or move a file and stage the change.
 
 ## Managing Remotes
 
 - `git remote -v`: List all remote repositories and their URLs.
 - `git remote add [name] [url]`: Add a new remote repository with the specified name and URL.
+- `git remote remove [name]`: Remove the specified remote repository.
 - `git push [remote] [branch-name]`: Push commits to the specified branch of the remote repository.
 - `git pull [remote] [branch-name]`: Fetch and merge changes from the specified branch of the remote repository.
 
