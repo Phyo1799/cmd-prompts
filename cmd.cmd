@@ -3,6 +3,10 @@
 :: File and Folder Management
 :: ================================================================
 
+
+:: Delete file or folder quickly
+rd /s /q folder_name
+
 :: Create a new folder
 md \ mkdir NewFolder    :: Create a folder named "NewFolder" 
 
